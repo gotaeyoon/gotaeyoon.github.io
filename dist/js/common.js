@@ -5,17 +5,19 @@ function openModal(modalname) {
         $("." + modalname).addClass('fade')
     }, 200);
 }
+
 // close Modal
 function closeModal() {
     let modals = $('.modal')
     let closeBtn = $('._modal_close_btn')
-    closeBtn.on('click',function(){
+    closeBtn.on('click', function () {
         modals.removeClass('fade')
         setTimeout(function () {
             modals.removeClass('show')
         }, 200);
     })
 }
+
 // close dim
 function dimModal() {
     let modals = $('.modal')
@@ -39,11 +41,28 @@ function formatPhoneNumber() {
     })
 }
 
+
 // header 버튼
 function toggleAccountInfo() {
-    $('._ico_account_btn').on('click', function () {
-        $('._header__account_info').toggle()
+    let accountInfo = $('._header__account_info')
+    let accountBtn = $('._ico_account_btn')
+
+    accountBtn.on('click', function () {
+        accountInfo.toggleClass('show')
     })
+
+}
+
+//selectbox 공통
+function selectBox() {
+    let selectBox = $('._select_box')
+    selectBox.on('click', function () {
+        $(this).toggleClass('active');
+    })
+    selectBox.find('.option').on('click', function () {
+        let text = $(this).text();
+        $(this).parent().parent().find('.select_value').text(text).css({'color': '#1F1F1F'});
+    });
 }
 
 
@@ -53,6 +72,7 @@ $(document).ready(function () {
     toggleAccountInfo();
     closeModal();
     dimModal();
+    selectBox();
 
 
 })

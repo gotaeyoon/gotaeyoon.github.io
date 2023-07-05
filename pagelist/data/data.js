@@ -21,40 +21,43 @@ data.login = {
     list: [
         {
             stateClass: 'confirm',
-            url: '가입완료_이메일 요청',
+            url: '로그인',
             category: 'login',
-            page: '가입완료_이메일 요청'
+            page: '로그인'
         },
         {
             stateClass: 'confirm',
-            url: '로그인화면',
+            url: '가입하기',
             category: 'login',
-            page: '로그인화면'
+            page: '가입하기'
         },
         {
             stateClass: 'confirm',
-            url: '비밀번호 재설정_비밀번호 변경',
+            url: '이메일인증하기',
             category: 'login',
-            page: '비밀번호 재설정_비밀번호 변경'
+            page: '이메일인증하기'
         },
         {
             stateClass: 'confirm',
-            url: '비밀번호 재설정_이메일_발송',
+            url: '비밀번호_재설정_이메일_주소',
             category: 'login',
-            page: '비밀번호 재설정_이메일_발송'
+            page: '비밀번호_재설정_이메일_주소'
         },
         {
             stateClass: 'confirm',
-            url: '비밀번호 재설정_이메일_주소',
+            url: '비밀번호_재설정_이메일_발송',
             category: 'login',
-            page: '비밀번호 재설정_이메일_주소'
+            page: '비밀번호_재설정_이메일_발송'
         },
         {
             stateClass: 'confirm',
-            url: '회원가입',
+            url: '비밀번호_재설정_비밀번호_변경',
             category: 'login',
-            page: '회원가입'
+            page: '비밀번호_재설정_비밀번호_변경'
         },
+
+
+
         {
             stateClass: 'confirm',
             url: '계정설정',
@@ -73,10 +76,16 @@ data.join = {
             page: '사업자번호확인'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '서비스정보입력',
             category: 'join',
             page: '서비스정보입력'
+        },
+        {
+            stateClass: 'confirm',
+            url: '서비스정보입력-추가신청',
+            category: 'join',
+            page: '서비스정보입력-추가신청'
         },
         {
             stateClass: 'confirm',
