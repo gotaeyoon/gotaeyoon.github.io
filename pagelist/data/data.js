@@ -3,13 +3,13 @@ data.email = {
     title: '이메일',
     list: [
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '가입완료',
             category: 'email',
             page: '가입완료'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '임시비밀번호',
             category: 'email',
             page: '임시비밀번호'
@@ -20,46 +20,49 @@ data.login = {
     title: '로그인',
     list: [
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '로그인',
             category: 'login',
             page: '로그인'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '가입하기',
             category: 'login',
             page: '가입하기'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '이메일인증하기',
             category: 'login',
             page: '이메일인증하기'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'waiting',
+            url: '이메일인증완료',
+            category: 'login',
+            page: '이메일인증완료'
+        },
+        {
+            stateClass: 'complete',
             url: '비밀번호_재설정_이메일_주소',
             category: 'login',
             page: '비밀번호_재설정_이메일_주소'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '비밀번호_재설정_이메일_발송',
             category: 'login',
             page: '비밀번호_재설정_이메일_발송'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '비밀번호_재설정_비밀번호_변경',
             category: 'login',
             page: '비밀번호_재설정_비밀번호_변경'
         },
-
-
-
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '계정설정',
             category: 'login',
             page: '계정설정'
@@ -123,6 +126,102 @@ data.join = {
             url: '해외완료',
             category: 'join',
             page: '해외완료'
+        },
+
+    ]
+}
+data.main = {
+    title: '메인페이지',
+    list: [
+        {
+            stateClass: 'complete',
+            url: '가이드페이지',
+            category: 'main',
+            page: '가이드페이지'
+        },
+        {
+            stateClass: 'confirm',
+            url: '최초신청',
+            category: 'main',
+            page: '최초신청'
+        },
+        {
+            stateClass: 'confirm',
+            url: '최초신청_작성중',
+            category: 'main',
+            page: '최초신청_작성중'
+        },
+        {
+            stateClass: 'confirm',
+            url: '최초신청_작성중_삭제',
+            category: 'main',
+            page: '최초신청_작성중_삭제'
+        },
+        {
+            stateClass: 'confirm',
+            url: '최초신청후_심사중',
+            category: 'main',
+            page: '최초신청_심사중'
+        },
+        {
+            stateClass: 'confirm',
+            url: '최초신청후_심사중_계약중',
+            category: 'main',
+            page: '최초신청_심사중_계약중'
+        },
+        {
+            stateClass: 'confirm',
+            url: '최초신청후_입점불가',
+            category: 'main',
+            page: '최초신청후_입점불가'
+        },
+        {
+            stateClass: 'confirm',
+            url: '최초신청후_1건이라도_계약_완료',
+            category: 'main',
+            page: '최초신청후_1건이라도_계약_완료'
+        },
+        {
+            stateClass: 'confirm',
+            url: '오픈후_추가신청',
+            category: 'main',
+            page: '오픈후_추가신청'
+        },
+        {
+            stateClass: 'confirm',
+            url: '오픈후_서비스신청작성중',
+            category: 'main',
+            page: '오픈후_서비스신청작성중'
+        },
+        {
+            stateClass: 'confirm',
+            url: '오픈후_신청_작성중_삭제',
+            category: 'main',
+            page: '오픈후_신청_작성중_삭제'
+        },
+        {
+            stateClass: 'confirm',
+            url: '오픈후_일부서비스정지',
+            category: 'main',
+            page: '오픈후_일부서비스정지'
+        },
+        {
+            stateClass: 'confirm',
+            url: '오픈후_사업자전체정지',
+            category: 'main',
+            page: '오픈후_사업자전체정지'
+        },
+        {
+            stateClass: 'confirm',
+            url: '국내해외이용중_사업자1개',
+            category: 'main',
+            page: '국내해외이용중_사업자1개'
+        },
+        {
+            stateClass: 'confirm',
+            url: '국내해외이용중_사용자2개이상',
+            category: 'main',
+            page: '국내해외이용중_사용자2개이상'
         },
 
     ]

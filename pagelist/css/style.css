@@ -102,7 +102,7 @@ caption.visually_hidden {
 }
 
 .state {
-  width: 48px;
+  width: 54px;
   top: 6px;
   height: 22px;
   position: absolute;
@@ -6396,7 +6396,7 @@ a {
 .nav_depth_2 .wrap_scroll ul li .link, .nav_depth_2 .wrap_scroll ul li .unlink {
   position: relative;
   display: block;
-  padding: 7px 18px 7px 60px;
+  padding: 7px 18px 7px 64px;
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
