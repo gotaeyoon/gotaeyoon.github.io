@@ -244,6 +244,50 @@ data.main = {
 
     ]
 }
+data.developercenter = {
+    title: '개발자센터',
+    list: [
+        {
+            stateClass: 'working',
+            url: '설정_api',
+            category: 'developercenter',
+            page: '설정_api'
+        },
+        {
+            stateClass: 'working',
+            url: '설정_웹훅_최초',
+            category: 'developercenter',
+            page: '설정_웹훅_최초'
+        },
+        {
+            stateClass: 'working',
+            url: '설정_웹훅_등록완료',
+            category: 'developercenter',
+            page: '설정_웹훅_등록완료'
+        },
+        {
+            stateClass: 'working',
+            url: '설정_웹훅_상세정보',
+            category: 'developercenter',
+            page: '설정_웹훅_상세정보'
+        },
+        {
+            stateClass: 'working',
+            url: '설정_whiteip_최초',
+            category: 'developercenter',
+            page: '설정_api'
+        },
+        {
+            stateClass: 'working',
+            url: '설정_whiteip_등록',
+            category: 'developercenter',
+            page: '설정_whiteip_등록'
+        },
+
+
+
+    ]
+}
 
 
 
