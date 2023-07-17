@@ -96,6 +96,28 @@ function HoverStopService(){
     })
 }
 
+
+function checkAll() {
+    $('._check_all').on('click',function(){
+        // if($("#cbx_chkAll").is(":checked")) $("input[name=chk]").prop("checked", true);
+        // else $("input[name=chk]").prop("checked", false);
+
+        if($("._check_all").is(":checked")){
+            $("input[name=chk]").prop("checked", true);
+        }else{
+            $("input[name=chk]").prop("checked", false);
+        }
+
+    })
+    $("input[name=chk]").click(function() {
+        let total = $("input[name=chk]").length;
+        let checked = $("input[name=chk]:checked").length;
+
+        if(total != checked) $("#cbx_chkAll").prop("checked", false);
+        else $("._check_all").prop("checked", true);
+    });
+}
+
 // 실행
 $(document).ready(function () {
     formatPhoneNumber();
@@ -106,6 +128,7 @@ $(document).ready(function () {
     HoverTextnotAllow();
     HoverTextService();
     HoverStopService();
+    checkAll();
 
 
 })

@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../css/payple_component.css">
     <link rel="stylesheet" href="../../css/payple_pages.css">
-    <script src="../../js/bundle.js"></script>
-    <script src="../../js/common.js"></script>
+    <script src="../../onboard/js/bundle.js"></script>
+    <script src="../../onboard/js/common.js"></script>
     <title></title>
 </head>
 <body>
@@ -47,7 +47,7 @@
 </header>
 <div class="join_container">
     <div class="progress_box">
-        <progress class="progress" value="80" min="0" max="100"></progress>
+        <progress class="progress_value" value="80" min="0" max="100"></progress>
     </div>
     <div class="join_wrap">
         <ul class="step_list">
@@ -86,12 +86,12 @@
                 <div class="detail__list">
                     <div class="input__area">
                         <p class="input_title">이름</p>
-                        <label><input class="form_control"></label>
+                        <label class="w-100"><input class="form_control"></label>
                     </div>
                     <div class="input__area">
                         <p class="input_title">이메일 주소</p>
                         <div class="position_relative">
-                            <label><input class="form_control border_danger"></label>
+                            <label class="w-100"><input class="form_control border_danger"></label>
                             <div class="validation_area ">
                                 <p class="validation color_danger">이메일 주소에 ‘@’를 포함해 주세요. </p>
                             </div>
@@ -102,7 +102,7 @@
                     </div>
                     <div class="input__area">
                         <p class="input_title">휴대폰 번호</p>
-                        <label><input class="form_control _input_phone" type="tel" maxlength="13"></label>
+                        <label class="w-100"><input class="form_control _input_phone" type="tel" maxlength="13"></label>
                     </div>
                 </div>
                 <div class="btn_next_prev_wrap">

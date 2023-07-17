@@ -249,18 +249,24 @@ data.developercenter = {
     list: [
         {
             stateClass: 'working',
+            url: '가이드',
+            category: 'developercenter',
+            page: '가이드'
+        },
+        {
+            stateClass: 'confirm',
             url: '설정_api',
             category: 'developercenter',
             page: '설정_api'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '설정_웹훅_최초',
             category: 'developercenter',
             page: '설정_웹훅_최초'
         },
         {
-            stateClass: 'working',
+            stateClass: 'confirm',
             url: '설정_웹훅_등록완료',
             category: 'developercenter',
             page: '설정_웹훅_등록완료'
@@ -272,16 +278,16 @@ data.developercenter = {
             page: '설정_웹훅_상세정보'
         },
         {
-            stateClass: 'working',
-            url: '설정_whiteip_최초',
+            stateClass: 'confirm',
+            url: '설정_white_ip_최초',
             category: 'developercenter',
-            page: '설정_api'
+            page: '설정_white_ip_최초'
         },
         {
-            stateClass: 'working',
-            url: '설정_whiteip_등록',
+            stateClass: 'confirm',
+            url: '설정_white_ip_등록',
             category: 'developercenter',
-            page: '설정_whiteip_등록'
+            page: '설정_white_ip_등록'
         },
 
 
