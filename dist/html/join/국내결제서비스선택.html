@@ -5,10 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../../css/payple_component.css">
-    <link rel="stylesheet" href="../../css/payple_pages.css">
-    <script src="../../js/bundle.js"></script>
-    <script src="../../js/common.js"></script>
+    <link rel="stylesheet" href="https://image.payple.kr/onboard/css/payple_component.css">
+    <link rel="stylesheet" href="https://image.payple.kr/onboard/css/payple_pages.css">
+    <script src="https://image.payple.kr/onboard/js/bundle.js"></script>
+    <script src="https://image.payple.kr/onboard/js/common.js"></script>
     <title></title>
 </head>
 <body>
@@ -61,7 +61,8 @@
             <h3 class="main_title font_weight_bold">이제, 버튼을 눌러 선택만 하면<br>
                 국내결제 신청이 완료됩니다.</h3>
             <div class="tablet_modal_btn">
-                <a href="javascript:openModal('modal0');"  class="btn ">수수료 확인하기<i class="icon ico_right_arrow_function_blue">화살표</i></a>
+                <a href="javascript:openModal('modal0');" class="btn ">수수료 확인하기<i
+                        class="icon ico_right_arrow_function_blue">화살표</i></a>
             </div>
             <div class="service__select_wrap">
                 <div class="service__select_section">
@@ -211,14 +212,23 @@
                         </div>
                         <div class="account__select_table">
                             <div class="table_row">
-                                <div class="select_table_title font_weight_bold">일반</div>
+                                <div class="select_table_title font_weight_bold">기본 수수료</div>
                                 <div class="select_table_desc">
                                     <div>1.50%</div>
                                 </div>
                             </div>
-
+                            <div class="table_row">
+                                <div class="select_table_title font_weight_bold">환불 수수료</div>
+                                <div class="select_table_desc">
+                                    <div>건당 300원</div>
+                                    <input name="account" type="checkbox" id="option1">
+                                    <label class="options_select" for="option1">
+                                        <span>환불(선택사항)</span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
-                        <p class="caption">*수수료</p>
+                        <p class="caption">*VAT별도 및 환불 서비스는 선택사항으로 별도 이용.</p>
                     </div>
                 </div>
                 <div class="service__select_section hub">
@@ -330,7 +340,6 @@
                     <div class="account__row">
                         <div class="title color_primary font_weight_bold">기타</div>
                         <div>
-
                             <div class="label__design">
                                 <input name="etc" type="checkbox" id="check11">
                                 <label class="checked__label" for="check11">
@@ -343,9 +352,19 @@
                     <div class="tablet_show">
                         <div class="account__select_table">
                             <div class="table_row">
-                                <div class="select_table_title font_weight_bold">수수료</div>
+                                <div class="select_table_title font_weight_bold">기본 수수료</div>
                                 <div class="select_table_desc">
-                                    <div>카드결제 수수료 + 0.1%</div>
+                                    <div>250원/건</div>
+                                </div>
+                            </div>
+                            <div class="table_row">
+                                <div class="select_table_title font_weight_bold">환불 수수료</div>
+                                <div class="select_table_desc">
+                                    <div>건당 300원</div>
+                                    <input name="account" type="checkbox" id="option2">
+                                    <label class="options_select" for="option2">
+                                        <span>환불(선택사항)</span>
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -445,7 +464,8 @@
                     <div class="table_layout">
                         <div class="table_row line2">
                             <div class="font_weight_bold">네이버페이, 애플페이,<br>
-                                카카오페이</div>
+                                카카오페이
+                            </div>
                             <div>카드결제 수수료 + 0.1%</div>
                         </div>
 

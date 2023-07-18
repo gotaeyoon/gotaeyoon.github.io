@@ -44,7 +44,7 @@ data.login = {
             page: '이메일인증완료'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '비밀번호_재설정_이메일_주소',
             category: 'login',
             page: '비밀번호_재설정_이메일_주소'
@@ -62,10 +62,22 @@ data.login = {
             page: '비밀번호_재설정_비밀번호_변경'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '계정설정',
             category: 'login',
             page: '계정설정'
+        },
+        {
+            stateClass: 'confirm',
+            url: '이메일_인증_만료',
+            category: 'login',
+            page: '이메일_인증_만료'
+        },
+        {
+            stateClass: 'confirm',
+            url: '비밀번호 재설정_비밀번호 변경 완료',
+            category: 'login',
+            page: '비밀번호 재설정_비밀번호 변경 완료'
         },
     ]
 }
