@@ -5,10 +5,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://image.payple.kr/onboard/css/payple_component.css?ver=0.7">
-    <link rel="stylesheet" href="https://image.payple.kr/onboard/css/payple_pages.css?ver=0.7">
-    <script src="https://image.payple.kr/onboard/js/bundle.js?ver=0.7"></script>
-    <script src="https://image.payple.kr/onboard/js/common.js?ver=0.7"></script>
+    <!--    서버반영시 -->
+        <link rel="stylesheet" href="https://image.payple.kr/onboard/css/payple_component.css?ver=0.71">
+        <link rel="stylesheet" href="https://image.payple.kr/onboard/css/payple_pages.css?ver=0.71">
+        <script src="https://image.payple.kr/onboard/js/bundle.js?ver=0.71"></script>
+        <script src="https://image.payple.kr/onboard/js/common.js?ver=0.71"></script>
+    <!--    로컬작업시-->
+<!--    <link rel="stylesheet" href="../../css/payple_component.css">-->
+<!--    <link rel="stylesheet" href="../../css/payple_pages.css">-->
+<!--    <script src="../../js/bundle.js"></script>-->
+<!--    <script src="../../js/common.js"></script>-->
     <title></title>
 </head>
 <body>
@@ -109,56 +115,58 @@
             </div>
             <div style="border: 1px solid #d9d9d9; padding: 20px 30px; margin-bottom: 30px">
                 <h6>달력테스트진행</h6>
-
-                <div class="label__design _modal_btn">
-                    <input name="checkType" type="radio" id="check2">
-                    <label for="check2" class="checked__label" onclick="openModal('modal0')">
-                        <span>네 맞아요</span>
-                    </label>
+                <label>
+                    <input type="text"  id="myDateRangePicker" name="demo" value=""/>
+                </label>
+                <i style="width: 10px; height: 10px; display: inline-block; border:1px solid blue" onclick="dataRangeModal('modal01')"></i>
                 </div>
-                <input type="text" id="myDateRangePicker" />
-                <div class="modal modal0">
-                    <div class="modal_dialog modal_table">
+                <div class="modal modal01">
+                    <div class="modal_dialog modal_date_range">
                         <div class="modal_content">
+                            <div class="modal_body" id="datepicker-parent">
+                            </div>
 
                         </div>
                     </div>
                 </div>
                 <script>
-                    function openModal(modalname) {
-                        $("#myDateRangePicker").datepicker('clearDates');
+                    const parentElement = document.querySelector('#datepicker-parent');
+                    $('#myDateRangePicker').daterangepicker({
+                        "locale": {
+                            "format": "YYYY-MM-DD",
+                            "separator": " ~ ",
+                            "applyLabel": "확인",
+                            "cancelLabel": "취소",
+                            "fromLabel": "From",
+                            "toLabel": "To",
+                            "customRangeLabel": "Custom",
+                            "weekLabel": "W",
+                            "daysOfWeek": ["일", "월", "화", "수", "목", "금", "토"],
+                            "monthNames": ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+                        },
+                        "startDate": new Date(),
+                        "endDate": new Date(),
+                        "buttonClasses" : "data_range_btn",
+                        "applyButtonClasses" : "apply_range_btn",
+                        "cancelButtonClasses" : "cancel_range_btn",
+                        "parentEl" : parentElement,
+
+                    },
+                        function (start, end, label) {
+                            console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+                        });
+                        $('#demo').on('show.daterangepicker', function(ev, picker) {
+
+                        })
+
+                </script>
+                <script>
+                    function dataRangeModal(modalname) {
                         $("." + modalname).addClass('show')
                         setTimeout(function () {
                             $("." + modalname).addClass('fade')
                         }, 200);
                     }
-
-                    // close Modal
-                    function closeModal() {
-                        let modals = $('.modal')
-                        let closeBtn = $('._modal_close_btn')
-                        closeBtn.on('click', function () {
-                            var selectedDates = $("#myDateRangePicker").datepicker('getDates');
-                            modals.removeClass('fade')
-                            setTimeout(function () {
-                                modals.removeClass('show')
-                            }, 200);
-                        })
-                    }
-
-                    // close dim
-                    function dimModal() {
-                        let modals = $('.modal')
-                        modals.on('click', function (e) {
-                            if (e.target == this) {
-                                modals.removeClass('fade')
-                                setTimeout(function () {
-                                    modals.removeClass('show')
-                                }, 200)
-                            }
-                        })
-                    }
-
                 </script>
             </div>
 
@@ -209,7 +217,7 @@
                     <button class="btn btn_secondary">등록하기</button>
                 </div>
             </div>
-            <div class="developer_card"   style="margin-bottom: 30px">
+            <div class="developer_card" style="margin-bottom: 30px">
                 <div class="title_area">
                     <p class="title test">White IP 등록</p>
                 </div>
@@ -267,7 +275,8 @@
                             <col style="width: 30%">
                             <col style="width: 60%">
                         </colgroup>
-                        <tbody><tr>
+                        <tbody>
+                        <tr>
                             <th class="check_table">
                                 <label>
                                     <input type="checkbox">
@@ -319,7 +328,8 @@
                             <td>2023-06-29 17:23:59</td>
                         </tr>
 
-                        </tbody></table>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="developer_card" style="margin-bottom: 30px">
