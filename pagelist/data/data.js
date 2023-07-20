@@ -97,7 +97,7 @@ data.join = {
             page: '서비스정보입력'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '서비스정보입력_모달',
             category: 'join',
             page: '서비스정보입력_모달'
@@ -127,13 +127,13 @@ data.join = {
             page: '결제수단선택_해외선택'
         },
         {
-            stateClass: 'waiting',
+            stateClass: 'confirm',
             url: '국내결제서비스선택',
             category: 'join',
             page: '국내결제서비스선택'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'confirm',
             url: '해외결제서비스선택',
             category: 'join',
             page: '해외결제서비스선택'
@@ -145,19 +145,19 @@ data.join = {
             page: '계약담당자정보_입력'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '최종확인',
             category: 'join',
             page: '최종확인'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '국내완료',
             category: 'join',
             page: '국내완료'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '해외완료',
             category: 'join',
             page: '해외완료'
@@ -175,85 +175,85 @@ data.main = {
             page: '가이드페이지'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '최초신청',
             category: 'main',
             page: '최초신청'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '최초신청_작성중',
             category: 'main',
             page: '최초신청_작성중'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '최초신청_작성중_삭제',
             category: 'main',
             page: '최초신청_작성중_삭제'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '최초신청후_심사중',
             category: 'main',
             page: '최초신청_심사중'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '최초신청후_심사중_계약중',
             category: 'main',
             page: '최초신청_심사중_계약중'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '최초신청후_입점불가',
             category: 'main',
             page: '최초신청후_입점불가'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '최초신청후_1건이라도_계약_완료',
             category: 'main',
             page: '최초신청후_1건이라도_계약_완료'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '오픈후_추가신청',
             category: 'main',
             page: '오픈후_추가신청'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '오픈후_서비스신청작성중',
             category: 'main',
             page: '오픈후_서비스신청작성중'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '오픈후_신청_작성중_삭제',
             category: 'main',
             page: '오픈후_신청_작성중_삭제'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '오픈후_일부서비스정지',
             category: 'main',
             page: '오픈후_일부서비스정지'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '오픈후_사업자전체정지',
             category: 'main',
             page: '오픈후_사업자전체정지'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '국내해외이용중_사업자1개',
             category: 'main',
             page: '국내해외이용중_사업자1개'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '국내해외이용중_사용자2개이상',
             category: 'main',
             page: '국내해외이용중_사용자2개이상'

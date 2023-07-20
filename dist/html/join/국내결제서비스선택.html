@@ -6,10 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--    서버반영시 -->
-        <link rel="stylesheet" href="https://image.payple.kr/onboard/css/payple_component.css?ver=0.71">
-        <link rel="stylesheet" href="https://image.payple.kr/onboard/css/payple_pages.css?ver=0.71">
-        <script src="https://image.payple.kr/onboard/js/bundle.js?ver=0.71"></script>
-        <script src="https://image.payple.kr/onboard/js/common.js?ver=0.71"></script>
+        <link rel="stylesheet" href="https://image.payple.kr/onboard/css/payple_component.css?ver=0.72">
+        <link rel="stylesheet" href="https://image.payple.kr/onboard/css/payple_pages.css?ver=0.72">
+        <script src="https://image.payple.kr/onboard/js/bundle.js?ver=0.72"></script>
+        <script src="https://image.payple.kr/onboard/js/common.js?ver=0.72"></script>
     <!--    로컬작업시-->
 <!--    <link rel="stylesheet" href="../../css/payple_component.css">-->
 <!--    <link rel="stylesheet" href="../../css/payple_pages.css">-->
@@ -94,7 +94,7 @@
                                         <span>빌링(정기결제)</span>
                                     </div>
                                     <div class="label_text_tablet">
-                                        <span class="title_tablet">빌링<br>(정기결제)</span>
+                                        <span class="title_tablet">빌링(정기결제)</span>
                                         <span class="desc_tablet">원하는 때에 자동으로 결제, 반복결제 가능</span>
                                     </div>
                                 </label>
@@ -106,7 +106,7 @@
                                         <span>비밀번호 간편결제</span>
                                     </div>
                                     <div class="label_text_tablet">
-                                        <span class="title_tablet">비밀번호<br>간편결제</span>
+                                        <span class="title_tablet">비밀번호 간편결제</span>
                                         <span class="desc_tablet">최초 카드 등록 후 비밀번호만으로 반복결제</span>
                                     </div>
                                 </label>
@@ -184,7 +184,7 @@
                                         <span>빌링(정기결제)</span>
                                     </div>
                                     <div class="label_text_tablet">
-                                        <span class="title_tablet">빌링<br>(정기결제)</span>
+                                        <span class="title_tablet">빌링(정기결제)</span>
                                         <span class="desc_tablet">원하는 때에 자동으로 결제, 반복결제 가능</span>
                                     </div>
                                 </label>
@@ -196,11 +196,14 @@
                                         <span>비밀번호 간편결제</span>
                                     </div>
                                     <div class="label_text_tablet">
-                                        <span class="title_tablet">비밀번호<br>간편결제</span>
+                                        <span class="title_tablet">비밀번호 간편결제</span>
                                         <span class="desc_tablet">최초 카드 등록 후 비밀번호만으로 반복결제</span>
                                     </div>
                                 </label>
                             </div>
+                            <label class="options_select tablet_show" for="option1">
+                                <span>환불(선택사항)</span>
+                            </label>
                         </div>
                     </div>
                     <div class="tablet_show">
@@ -227,7 +230,7 @@
                                 <div class="select_table_title font_weight_bold">환불 수수료</div>
                                 <div class="select_table_desc">
                                     <div>건당 300원</div>
-                                    <input name="account" type="checkbox" id="option1">
+                                    <input name="account" class="_option1" type="checkbox" id="option1">
                                     <label class="options_select" for="option1">
                                         <span>환불(선택사항)</span>
                                     </label>
@@ -249,10 +252,11 @@
                                         <span>플랫폼 자동 정산</span>
                                     </div>
                                     <div class="label_text_tablet">
-                                        <span class="title_tablet">비밀번호<br>간편결제</span>
-                                        <span class="desc_tablet">최초 카드 등록 후 비밀번호만으로 반복결제</span>
+                                        <span class="title_tablet">플랫폼 자동 정산</span>
+                                        <span class="desc_tablet">플랫폼이 지정한 셀러의 계좌로 페이플이 직접 지급(계좌 인증 포함)</span>
                                     </div>
                                 </label>
+
                             </div>
                             <div class="label__design">
                                 <input name="hub" type="radio" id="check7">
@@ -321,7 +325,7 @@
                                     <span><i class="icon ico_applepay">애플페이</i></span>
                                 </label>
                             </div>
-                            <div class="label__design">
+                            <div class="label__design mb_0">
                                 <input name="simplepay" type="checkbox" id="check10">
                                 <label class="checked__label" for="check10">
                                     <span><i class="icon ico_kakaopay">카카오페이</i></span>
@@ -353,7 +357,9 @@
                                     <span>가상계좌</span>
                                 </label>
                             </div>
-
+                            <label class="options_select tablet_show" style="margin-top: 0" for="option2">
+                                <span>환불(선택사항)</span>
+                            </label>
                         </div>
                     </div>
                     <div class="tablet_show">
@@ -368,7 +374,7 @@
                                 <div class="select_table_title font_weight_bold">환불 수수료</div>
                                 <div class="select_table_desc">
                                     <div>건당 300원</div>
-                                    <input name="account" type="checkbox" id="option2">
+                                    <input name="account" type="checkbox" class="_option2" id="option2">
                                     <label class="options_select" for="option2">
                                         <span>환불(선택사항)</span>
                                     </label>
@@ -445,9 +451,14 @@
                             <div class="font_weight_bold">비밀번호<br>간편결제</div>
                         </div>
                         <div class="table_row line3">
-                            <div>수수료</div>
+                            <div>기본 수수료</div>
                             <div>1.50%</div>
                             <div>1.50%</div>
+                        </div>
+                        <div class="table_row line2">
+                            <div>환불 수수료</div>
+                            <div style="text-align: left;padding-left: 20px">건당 300원</div>
+
                         </div>
                     </div>
                     <p class="modal_table_title">허브</p>
@@ -482,9 +493,12 @@
                     <div class="table_layout">
                         <div class="table_row line2">
                             <div class="font_weight_bold">가상계좌</div>
-                            <div>250원/건</div>
+                            <div style="text-align: left; padding-left: 20px;">250원/건</div>
                         </div>
-
+                        <div class="table_row line2">
+                            <div class="font_weight_bold">환불 수수료</div>
+                            <div style="text-align: left; padding-left: 20px;">건당 300원</div>
+                        </div>
                     </div>
                 </div>
                 <div class="modal_footer">
@@ -494,5 +508,32 @@
         </div>
     </div>
 </div>
+<script>
+   function moIsChecked(){
+       const checkbox = $('._option1')
+       const checkbox2 = $('._option2')
+       const label = $('.options_select.tablet_show')
+
+       label.eq(0).on('click',function(){
+            if(checkbox.is(":checked") == false){
+                $(this).css({backgroundColor : '#e9e1ff', border :'1px solid #7852e8' })
+            }else{
+                $(this).css({backgroundColor : '#f0f0f0', border :'1px solid #f0f0f0' })
+            }
+        })
+       label.eq(1).on('click',function(){
+           if(checkbox2.is(":checked") == false){
+               $(this).css({backgroundColor : '#e9e1ff', border :'1px solid #7852e8' })
+           }else{
+               $(this).css({backgroundColor : '#f0f0f0', border :'1px solid #f0f0f0' })
+           }
+       })
+
+
+
+
+   }
+   moIsChecked()
+</script>
 </body>
 </html>
