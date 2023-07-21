@@ -115,10 +115,9 @@
             </div>
             <div style="border: 1px solid #d9d9d9; padding: 20px 30px; margin-bottom: 30px">
                 <h6>달력테스트진행</h6>
-                <label>
-                    <input type="text"  id="myDateRangePicker" name="demo" value=""/>
-                </label>
-                <i style="width: 10px; height: 10px; display: inline-block; border:1px solid blue" onclick="dataRangeModal('modal01')"></i>
+
+                    <input type="text"  id="myDateRangePicker" name="demo" />
+                    <label for="myDateRangePicker" onclick="dataRangeModal('modal01')" style="width: 10px; height: 10px; display: inline-block; border:1px solid blue" ></label>
                 </div>
                 <div class="modal modal01">
                     <div class="modal_dialog modal_date_range">
@@ -150,16 +149,27 @@
                         "applyButtonClasses" : "apply_range_btn",
                         "cancelButtonClasses" : "cancel_range_btn",
                         "parentEl" : parentElement,
-
                     },
                         function (start, end, label) {
                             console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
                         });
-                        $('#demo').on('show.daterangepicker', function(ev, picker) {
-
-                        })
-
+                    $('#myDateRangePicker').on('apply.daterangepicker', function(ev, picker) {
+                        let modals = $('.modal')
+                        modals.removeClass('fade')
+                        setTimeout(function () {
+                            modals.removeClass('show')
+                        }, 200);
+                    });
+                    $('#myDateRangePicker').on('cancel.daterangepicker', function(ev, picker) {
+                        let modals = $('.modal')
+                        modals.removeClass('fade')
+                        setTimeout(function () {
+                            modals.removeClass('show')
+                        }, 200);
+                    });
                 </script>
+
+
                 <script>
                     function dataRangeModal(modalname) {
                         $("." + modalname).addClass('show')
