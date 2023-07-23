@@ -114,13 +114,16 @@
                 </div>
             </div>
             <div style="border: 1px solid #d9d9d9; padding: 20px 30px; margin-bottom: 30px">
-                <h6>달력테스트진행</h6>
-                <label>
-                    <input type="text"  id="myDateRangePicker" name="demo" value=""/>
-                </label>
-                <i style="width: 10px; height: 10px; display: inline-block; border:1px solid blue" onclick="dataRangeModal('modal01')"></i>
+                <div>
+                    <h6>달력테스트진행</h6>
+                    <div class="position_relative">
+                        <input type="text" class="form_control" id="myDateRangePicker" name="demo"/>
+                        <label for="myDateRangePicker" class="input__date" onclick="openModal('modal01')">
+                            <i class="ico_calender icon"></i>
+                        </label>
+                    </div>
                 </div>
-                <div class="modal modal01">
+                <div class="modal date_range modal01">
                     <div class="modal_dialog modal_date_range">
                         <div class="modal_content">
                             <div class="modal_body" id="datepicker-parent">
@@ -146,27 +149,18 @@
                         },
                         "startDate": new Date(),
                         "endDate": new Date(),
-                        "buttonClasses" : "data_range_btn",
-                        "applyButtonClasses" : "apply_range_btn",
-                        "cancelButtonClasses" : "cancel_range_btn",
-                        "parentEl" : parentElement,
+                        "buttonClasses": "data_range_btn",
+                        "applyButtonClasses": "apply_range_btn",
+                        "cancelButtonClasses": "cancel_range_btn",
+                        "showCustomRangeLabelranges" : false,
+                        "parentEl": parentElement,
 
-                    },
-                        function (start, end, label) {
-                            console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
-                        });
-                        $('#demo').on('show.daterangepicker', function(ev, picker) {
 
-                        })
 
-                </script>
-                <script>
-                    function dataRangeModal(modalname) {
-                        $("." + modalname).addClass('show')
-                        setTimeout(function () {
-                            $("." + modalname).addClass('fade')
-                        }, 200);
-                    }
+                    }, function (start, end, label) {
+                        console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+                    });
+
                 </script>
             </div>
 
