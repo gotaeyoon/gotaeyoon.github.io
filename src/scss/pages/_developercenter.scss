@@ -1,0 +1,297 @@
+.developer_container{
+    display: flex;
+
+
+    .developer_content{
+        height: 100%;
+        padding: 136px 0 80px;
+        flex: 1 1 auto;
+        .developer_section{
+            max-width: 780px;
+            margin: 0 auto;
+            .title_area{
+                margin-bottom: 40px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &.detail{
+                    justify-content: flex-start;
+                    .title{
+                        color: #1F1F1F;
+                        font-weight: 500;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                        a{
+                            color: inherit;
+                        }
+                    }
+                    span{
+                        margin-left: 53px;
+                        font-size: 30px;
+                        font-weight: 700;
+                        i{
+                            margin-right: 22px;
+                        }
+                        a{
+                            color: #1F1F1F;
+                        }
+                    }
+                }
+                .title{
+                    position: relative;
+                    font-size: 30px;
+                    font-weight: 700;
+                    &.test{
+                        &:before{
+                            position: absolute;
+                            content: 'TEST';
+                            font-size: 15px;
+                            font-weight: bold;
+                            right: -42px;
+                            top: 0;
+                            color: #62BB00;
+                        }
+                    }
+
+                }
+                .guide_link{
+                    color: #0086F1;
+                    span{
+                        text-decoration: underline;
+                    }
+                }
+
+            }
+            .input__area{
+                margin-bottom: 60px;
+                .input_title{
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+                .input_copy_box{
+                    position: relative;
+                    display: flex;
+                    label{
+                        flex: 1 1 auto;
+                        input{
+                            font-size: 17px;
+                        }
+                    }
+                    .icon{
+                        cursor: pointer;
+                        margin-left: 20px;
+                        &:hover{
+                            background-image: url("https://image.payple.kr/onboard/icon/ico_copy_active.png");
+                        }
+                    }
+
+                }
+                &.input_one__button__area{
+                    flex: 1 1 auto;
+                }
+                .input_one__button{
+                    display: flex;
+                    justify-content: space-between;
+                    label{
+                        flex: 1 1 auto;
+                    }
+                    button{
+                        margin-left: 24px;
+                        min-width: 102px;
+                        &:hover{
+                            border: 1px solid #7852E8;
+                            color: #7852E8;
+                            background-color: #E8E3FF;
+                        }
+                    }
+
+                }
+            }
+            .caption_text{
+                margin-top: 12px;
+                color: #BABAC2;
+                font-size: 15px;
+                span{
+                    vertical-align: middle;
+                }
+                .icon{
+                    margin-right: 10px;
+                }
+            }
+            .developer_card{
+                border: 1px solid #ced4da;
+                border-radius: 15px;
+                padding: 24px;
+                .title_area{
+                    margin-bottom: 20px;
+                    .title{
+                        font-size: 18px;
+                        &:before{
+                            font-size: 9px;
+                            right: -28px;
+                        }
+                    }
+                    .icon{
+                        &:hover{
+                            cursor: pointer;
+                            background-image: url("https://image.payple.kr/onboard/icon/ico_trashcan_active.png");
+                        }
+                    }
+                }
+                .pagination_area{
+                    margin-top: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .pagination_list{
+                        display: flex;
+                        >li{
+                            font-size: 15px;
+                            cursor: pointer;
+                            color: #BABAC2;
+                            margin-left: 20px;
+                            &.active{
+                                font-weight: 700;
+                            }
+                            &:nth-last-child(1){
+                                margin-right: 20px;
+                            }
+                        }
+
+                    }
+                    .pagination_arrow {
+                        cursor: pointer;
+                        &.first_button{
+                            margin-right: 10px;
+                        }
+                        &.last_button{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .input__area__list{
+                    display: flex;
+                    .input__area{
+                        margin-bottom: 0;
+                        &.name{
+
+                            margin-right: 24px;
+                            flex: 1 1 15%;
+                        }
+                        &.url{
+
+                            margin-right: 24px;
+                            flex: 1 1 45%;
+                        }
+                        &.data{
+
+                            flex: 1 1 40%;
+                        }
+                        .input_title{
+                            font-size: 15px;
+                            font-weight: 500;
+                        }
+                        .input_copy_box{
+                            position: relative;
+                            display: flex;
+                            label{
+                                flex: 1 1 auto;
+                                input{
+                                    font-size: 17px;
+                                }
+                            }
+                            .icon{
+                                cursor: pointer;
+                                margin-left: 20px;
+                                &:hover{
+                                    background-image: url("https://image.payple.kr/onboard/icon/ico_copy_active.png");
+                                }
+                            }
+
+                        }
+                        .select_box{
+                            padding: 13px 12px;
+                        }
+                    }
+
+
+
+                }
+                +.developer_card{
+                    margin-top: 60px;
+                }
+                .btn_area{
+                    margin-top: 60px;
+                    display: flex;
+                    justify-content: flex-end;
+                    .btn_secondary{
+                        font-size: 15px;
+                        min-width: 102px;
+                        &:hover{
+                            border: 1px solid #7852E8;
+                            color: #7852E8;
+                            background-color: #E8E3FF;
+                        }
+                        &:first-child{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            .search_result_area{
+                border-radius: 15px;
+                overflow: hidden;
+                .title_area{
+                    margin-bottom: 20px;
+                    .title{
+                        font-size: 18px;
+                    }
+
+                }
+                .border_line{
+                    border-radius: 15px;
+                    overflow: hidden;
+                    border: 1px solid #ced4da;
+                }
+                table{
+                    width: 100%;
+                    th{
+                        padding: 11px 10px;
+                        background-color: #F6F6F6;
+                        text-align: center;
+                        color: #52525B;
+                        font-weight: 500;
+                        &.check_table{
+                            text-align: center;
+                        }
+                    }
+                    td{
+                        border-bottom: 1px solid #F0F0F0;
+                        padding: 11px 10px;
+                        text-align: center;
+                        &.check_table{
+                            text-align: center;
+                        }
+                        &.empty_data{
+                            text-align: center;
+                            padding: 55px 0;
+                            border-bottom: none;
+                        }
+                        &.name_data{
+                            a{
+                                text-decoration: underline;
+                                color: #0086F1;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+
+
+
+}

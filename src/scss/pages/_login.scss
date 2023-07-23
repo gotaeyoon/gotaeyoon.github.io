@@ -1,0 +1,372 @@
+
+/*로그인 & 회원가입 페이지 관련 css 입니다.*/
+.login__wrap{
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.label_w100{
+    width: 100%;
+}
+
+.login__container{
+    width: 100%;
+
+}
+.login__logo{
+    font-size: 0;
+    margin-bottom: 32px;
+}
+.login__logo a{
+    display: inline-block;
+    width: 110px;
+    height: auto;
+}
+.email_container {
+    padding: 70px 0;
+}
+.login__box{
+    padding: 32px 35px;
+    margin: 0 auto;
+    border-radius: 14px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.15);
+    .input__area{
+        margin-bottom: 30px;
+        .validation_area{
+
+            margin-top: 10px;
+        }
+    }
+
+}
+.login__box__title{
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.login__box{
+    .g-recaptcha{
+        transform: scale(1.2); display: flex; justify-content: center;
+        @include mo-res{
+            scale: 0.8;
+        }
+    }
+}
+
+.input_title{
+    word-break: keep-all;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #28282E;
+}
+
+.input_title + .radio_box{
+    padding-top: 5px;
+}
+
+.join__password_reset_area{
+    text-align: center;
+}
+
+.join__password_reset_area a{
+    color: #28282E;
+    display: inline-block;
+}
+.join__password_reset_area a:first-child{
+    margin-right: 12px;
+    position: relative;
+}
+.join__password_reset_area a:first-child:before{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    content: '';
+    display: inline-block;
+    background-color: #000000;
+    top: 0;
+    right: -7px;
+}
+
+.login__box__email_send{
+    padding-top: 14px;
+    padding-bottom: 19px;
+}
+.login__box__email_send .ico_email{
+    margin-bottom: 32px;
+}
+
+.login__box__email_send .text{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.email__confirm_text{
+    word-break: keep-all;
+    font-size: 16px;
+    line-height: 24px;
+}
+.already__link_area{
+    margin-top: 42px;
+}
+.already__link_area a{
+    margin-left: 8px;
+    text-decoration: underline;
+    color: #0086f1;
+    font-weight: 700;
+}
+
+.radio_box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -14px;
+}
+.radio_box .radio_custom_btn{
+    flex: 1 1 50%;
+    margin-bottom: 14px;
+}
+.detail_input{
+    padding-top: 28px;
+    display: none;
+}
+.detail_input.show{
+    display: block;
+}
+.detail_input::placeholder{
+    font-size: 16px;
+}
+.checkbox_box{
+    display: flex;
+    flex-direction: column;
+}
+.checkbox_box .checkbox_custom_btn:first-child{
+    margin-bottom: 12px;
+}
+
+.modal_btn{
+    font-size: 13px;
+    text-decoration: underline;
+    color: inherit;
+}
+
+
+
+.textarea__document{
+    font-size: 15px;
+    line-height: 22px;
+    word-break: keep-all;
+}
+.textarea__document h3{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.textarea__document p{
+    margin-bottom: 10px;
+}
+.textarea__document li{
+    position: relative;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.textarea__document li::before{
+    content: attr(data-bullet);
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+.textarea__document li:nth-last-of-type(1){
+    margin-bottom: 10px;
+}
+.textarea__document .list.text >li{
+    margin-left: 25px;
+}
+.textarea__document .list.text >li::before{
+    left: -20px;
+}
+.textarea__document table{
+    margin-bottom: 20px;
+    width: 100%;
+    table-layout: auto;
+    text-align: center;
+    border: 1px solid #eee;
+    margin-top: 20px;
+}
+
+.textarea__document table th{
+    width:33.3333%;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.textarea__document table td{
+    width:33.3333%;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    word-break: break-all;
+}
+
+.textarea__document table td:nth-last-of-type(1){
+   margin-bottom: 0;
+}
+.email_send{
+    margin-top: 42px;
+}
+.email_send button{
+    border: 0;
+    background-color: transparent;
+    text-decoration: underline;
+    color: #BABAC2;
+    font-size: 16px;
+}
+
+
+/*계정관리*/
+.setting_wrap{
+    max-width: 410px;
+    padding: 0 35px;
+    margin: 0 auto;
+}
+.setting_wrap{
+    .input__area{
+        margin-bottom: 30px;
+        .validation_area{
+            margin-top: 10px;
+        }
+    }
+}
+.setting_wrap .main_title{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.setting_wrap .sub_title{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.setting_wrap .btn_wrap{
+    padding-top: 50px;
+}
+.setting_wrap .delete_btn{
+    text-decoration: underline;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+
+.service__info__section{
+    width: 380px;
+    margin: 50px auto 0;
+    @include mo-res{
+        width: 100%;
+    }
+    .info_box{
+        margin-bottom: 78px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .caption{
+        padding-top: 10px;
+        font-size: 14px;
+        color: #85858F;
+    }
+    .info_main_title{
+        font-size: 20px;
+        color: #7852E8;
+        margin-bottom: 20px;
+    }
+    .info_sub_title{
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .input_box{
+        margin-bottom: 40px;
+        .btn{
+            background-color: #F0F0F0;
+            color: #7852E8;
+            font-weight: 700;
+            &:hover{
+                background-color: #DDDDE3;
+            }
+            padding: 10px 20px;
+        }
+        .gray_box{
+            padding: 12px;
+            border: 1px solid #D2D2D2;
+            min-height: 99px;
+            border-radius: 7px;
+            margin-bottom: 12px;
+            .is_check_box{
+                display: inline-block;
+                border: 1px solid #7852E8;
+                padding: 8px 12px;
+                border-radius: 42px;
+                font-size: 13px;
+                color: #7852e8;
+                margin: 0 8px 8px 0;
+
+                i{
+                    cursor: pointer;
+                    margin-left: 4px;
+                }
+            }
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.timeout_section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >div{
+        text-align: center;
+    }
+    .title{
+        margin-bottom: 18px;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+    .desc{
+        font-size: 18px;
+        margin-bottom: 43px;
+        line-height: 25px;
+    }
+    .icon{
+        margin-right: 9px;
+    }
+    .btn{
+        padding: 13px 18px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+
+
+@media all and (max-width:479px) {
+    .login__logo{
+        text-align: center;
+    }
+    .login__box{
+        box-shadow: none;
+    }
+    .radio_box .radio_custom_btn{
+        flex: 1 1 100%;
+        margin-bottom: 18px;
+    }
+}
+
+
+
+
