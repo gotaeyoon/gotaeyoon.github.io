@@ -69,22 +69,21 @@
             <h3 class="main_title font_weight_bold mo_show">반갑습니다.<br>결제서비스 신청을 시작할게요.<br>
                 신청을 위해 사업자 번호를<br>확인해주세요.</h3>
             <div class="business_number_area">
-                <div class="business_number">
-                    <div class="input__area mb-0">
-                        <div class="position_relative">
-                            <label>
-                                <input class="form_control border_danger" type="tel">
-                            </label>
+                <div class="input__area mb-0">
+                    <div class="position_relative">
+                        <label>
+                            <input class="form_control border_danger" type="tel">
+                        </label>
+                        <div class="validation_area show">
+<!--                        <p class="validation color_primary">정상 사업자 입니다</p>-->
+                            <p class="validation color_danger">휴, 폐업 사업자 입니다.<br>
+                                현재 운영중인 사업자 번호를 입력해주세요.</p>
+
                         </div>
                     </div>
-                    <button class="btn btn_primary">조회</button>
-                </div>
-                <div class="validation_area show">
-                    <!--                        <p class="validation color_primary">정상 사업자 입니다</p>-->
-                    <p class="validation color_danger">휴, 폐업 사업자 입니다.<br>
-                        현재 운영중인 사업자 번호를 입력해주세요.</p>
 
                 </div>
+                <button class="btn btn_primary">조회</button>
             </div>
             <div class="btn_next_prev_wrap">
                 <button class="btn btn_prev btn_primary" disabled><span>다음</span><i class="icon ico_right_white">다음</i></button>

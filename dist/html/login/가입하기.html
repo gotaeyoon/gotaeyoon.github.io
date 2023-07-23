@@ -32,8 +32,14 @@
                     <p class="input_title">이메일 주소</p>
                     <div class="position_relative">
                         <label class="w-100"><input class="form_control border_danger"></label>
-                        <div class="validation_area show">
+                        <div class="validation_area ">
                             <p class="validation color_danger">이메일 주소에 ‘@’를 포함해 주세요. </p>
+                        </div>
+                        <div class="validation_area">
+                            <p class="validation color_danger">이메일 형식을 다시 확인해 주세요.</p>
+                        </div>
+                        <div class="validation_area show">
+                            <p class="validation color_danger">이미 등록된 이메일입니다.</p>
                         </div>
                     </div>
                 </div>
@@ -45,7 +51,12 @@
                         <div class="validation_area show">
                             <p class="validation color_danger">영문, 숫자, 특수기호 조합 8자리 이상 입력해 주세요.</p>
                         </div>
-
+                        <div class="validation_area">
+                            <p class="validation color_danger">영문 포함하여 8자리 이상 입력해 주세요.</p>
+                        </div>
+                        <div class="validation_area">
+                            <p class="validation color_danger">특수기호 포함하여 8자리 이상 입력해 주세요.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="input__area">
@@ -124,7 +135,7 @@
                         </label>
                     </div>
                 </div>
-                <div class="input__area">
+                <div class="input__area mb-0">
                     <div class="checkbox_box">
                         <div class="checkbox_custom_btn">
                             <label>
@@ -145,7 +156,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="btn_area pt-12">
+                <div class="btn_area mb-0">
                     <button class="btn btn_primary w-100 submit__btn">로그인</button>
                 </div>
             </form>
