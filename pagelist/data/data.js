@@ -62,19 +62,19 @@ data.login = {
             page: '비밀번호_재설정_비밀번호_변경'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '계정설정',
             category: 'login',
             page: '계정설정'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '계정설정_비밀번호',
             category: 'login',
             page: '계정설정_비밀번호'
         },
         {
-            stateClass: 'waiting',
+            stateClass: 'complete',
             url: '이메일_인증_만료',
             category: 'login',
             page: '이메일_인증_만료'
@@ -97,7 +97,7 @@ data.join = {
             page: '사업자번호확인'
         },
         {
-            stateClass: 'confirm',
+            stateClass: 'complete',
             url: '서비스정보입력',
             category: 'join',
             page: '서비스정보입력'
@@ -151,7 +151,7 @@ data.join = {
             page: '계약담당자정보_입력'
         },
         {
-            stateClass: 'complete',
+            stateClass: 'waiting',
             url: '최종확인',
             category: 'join',
             page: '최종확인'
